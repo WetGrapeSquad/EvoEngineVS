@@ -126,7 +126,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>E:\Soft\SDKs\Vulkan1.1.101.0\Bin32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;vulkan-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -156,11 +156,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\EngineBin\Vulkan\vulkan.cpp" />
     <ClCompile Include="..\Libraries\data_header.cpp" />
+    <ClCompile Include="EvoEngine.cpp" />
+    <ClCompile Include="vulkan_core.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\EngineBin\Vulkan\vulkan.h" />
     <ClInclude Include="..\Libraries\data_header.h" />
-    <ClInclude Include="..\RHI\Vulkan\vulkan.h" />
+    <ClInclude Include="EvoEngine.h" />
+    <ClInclude Include="vulkan_core.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

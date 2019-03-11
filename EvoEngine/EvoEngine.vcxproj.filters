@@ -19,18 +19,36 @@
     <Filter Include="Vulkan">
       <UniqueIdentifier>{a65c1b24-dad6-405c-9d68-8b6e26216132}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{9322c4d1-ab75-420b-8cf5-b1e09ea78e59}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Libraries\data_header.cpp">
       <Filter>Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="EvoEngine.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EngineBin\Vulkan\vulkan.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="vulkan_core.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Libraries\data_header.h">
       <Filter>Libraries</Filter>
     </ClInclude>
-    <ClInclude Include="..\RHI\Vulkan\vulkan.h">
+    <ClInclude Include="EvoEngine.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EngineBin\Vulkan\vulkan.h">
       <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="vulkan_core.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
