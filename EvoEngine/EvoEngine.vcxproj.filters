@@ -16,6 +16,9 @@
     <Filter Include="Libraries">
       <UniqueIdentifier>{ca7bd8bb-f4b1-49c6-a75e-5701fafb5ef9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Vulkan">
+      <UniqueIdentifier>{a65c1b24-dad6-405c-9d68-8b6e26216132}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Libraries\data_header.cpp">
@@ -25,6 +28,9 @@
   <ItemGroup>
     <ClInclude Include="..\Libraries\data_header.h">
       <Filter>Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RHI\Vulkan\vulkan.h">
+      <Filter>Vulkan</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

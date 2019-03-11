@@ -209,16 +209,3 @@ int newvar(char* varname, char* cont) {
 	else
 		return -1;
 }
-int setvar(char* varname, char* cont) 
-{
-
-}
-var getvar(char* varname) 
-{
-
-}
-
-int delvar(char* varname) 
-{
-
-}
