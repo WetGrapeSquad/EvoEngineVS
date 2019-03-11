@@ -40,4 +40,8 @@ private:
 	VkDevice m_device;
 	VkSurfaceKHR m_surface;
 	VulkanPhysicalDevices m_physDevices;
+
+	std::string m_appName;
+	int m_gfxDevIndex;
+	int m_gfxQueueFamily;
 };
