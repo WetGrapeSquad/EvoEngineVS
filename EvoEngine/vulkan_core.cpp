@@ -4,6 +4,7 @@
 
 vulkan_core::vulkan_core()
 {
+
 }
 
 
