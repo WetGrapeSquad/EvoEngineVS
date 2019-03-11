@@ -159,11 +159,13 @@
     <ClCompile Include="..\EngineBin\Vulkan\vulkan.cpp" />
     <ClCompile Include="..\Libraries\data_header.cpp" />
     <ClCompile Include="EvoEngine.cpp" />
+    <ClCompile Include="vulkan_core.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\EngineBin\Vulkan\vulkan.h" />
     <ClInclude Include="..\Libraries\data_header.h" />
     <ClInclude Include="EvoEngine.h" />
+    <ClInclude Include="vulkan_core.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
